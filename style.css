@@ -1,0 +1,765 @@
+/*BODY*/
+
+* {
+    margin-top: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+   
+main {
+    margin-left: 50px;
+}
+
+
+/*HEADER*/
+
+.header {
+    margin-left: 50px;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booki {
+    height: 100%;
+    padding-top: 60px;
+}
+
+.booki img {
+    width: 90px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 250px;
+}
+
+
+
+div .barrebleuhebergements, div .barrebleuactivites {
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    padding-top: 45px;
+}
+
+div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    padding-top: 45px;
+    border-top: solid 3px #0065FC;
+}
+
+.barrebleuhebergements:hover a, .barrebleuactivites:hover a {
+    color: #0065FC;
+}
+
+.barrebleuactivites a, .barrebleuhebergements a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+
+
+/*SECTION 1*/
+
+
+.title h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.title h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight:200;
+    font-size: 13.5px;
+    margin-top: 15px;
+}
+
+.citysearch {
+    display: flex;
+    width: 341px;
+    height: 40px;
+}
+
+.location {
+    width: 40px;
+    height: 40px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.citysearch input {
+    width: 188px;
+    height: 36px;
+    border: solid 1px #F2F2F2;
+    border-left: none;
+    border-right: none;
+}
+
+.recherche {
+    display: flex;
+}
+
+.citysearch button {
+    width: 105px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: #FFF;
+}
+
+
+.recherche i.fa-solid {
+    display: none;
+}
+
+.filter {
+    width: 751px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px 0px 10px;
+}
+
+.filter p {
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size: 15px;
+    margin: 0px 10px 0px 10px;
+}
+
+.filterbutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 30px;
+    border: solid 2px #f2f2f2;
+    border-left: none;
+    height: 40px;
+    padding: 0px;
+}
+
+.filterbutton:focus {
+    background-color: #0065FC;
+    border: solid 2px #0065FC;
+    border-left: none;
+    color: #FFF;
+}
+
+.filterbutton:hover {
+    background-color: #0065FC;
+    border: solid 2px #0065FC;
+    border-left: none;
+    color: #FFF;
+}
+
+.bordericon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DEEBFF;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    font-size: 100%;
+    color: #0065FC;
+}
+
+
+
+.info {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:200;
+    font-size: 13.5px;
+
+}
+
+.info span {
+    color: #0065FC;
+    width: 23px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: solid 2px #f2f2f2;
+}
+
+.info p {
+    margin: 0px 0px 0px 10px;
+}
+
+/* SECTION 2 */
+
+
+
+.allhebergements {
+    display: flex;
+}
+
+.hebergements {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 500px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.flexboxhebergements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 75%;
+}
+
+.hebergements h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 30px 0px 20px 30px;
+}
+
+.carte {
+    width: 204px;
+    height: 155px;
+    background-color: #FFF;
+    border-radius: 20px;
+    border: solid 5px #FFF;
+}
+
+.photosresultats {
+    height: 60%;
+    width: 100%;
+}
+
+.carte img {
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 40%;
+    margin-left: 10px;
+}
+
+.information h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size: 13px;
+    margin: 5px 0px 5px 0px;
+}
+
+.information p {
+    font-family: 'Raleway', sans-serif;
+    font-weight:200;
+    font-size: 10px;
+    margin: 0px 0px 5px 0px;
+}
+
+.hostingMainCardGradeIcon {
+    color: #0065FC;
+    font-size: 70%;
+}
+
+.hostingMainCardGradeIcon.vide {
+    color: #f2f2f2;
+}
+
+
+#afficherplus {
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size: 13px;
+    margin: 0px 0px 0px 40px;
+}
+
+
+
+
+.populaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 28%;
+    height: 500px;
+    margin: 20px 0px 0px 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+.populaires h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size: 20px;
+    margin: 0px 0px 0px 35px;
+}
+
+.titlestarpopulaire {
+    display: flex;
+    align-items: center;
+}
+
+.fas.fa-star.hostingMainCardGradeIcon.noire {
+    color: black;
+    top: 0px;
+    font-size: 120%;
+    margin: 00px 0px 0px 50px;
+}
+
+.resultatspopulaires {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cartepopulaire {
+
+    display: flex;
+    background-color: #fff;
+    border: solid 5px #fff;
+    border-radius: 20px 20px 20px 20px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 256px;
+}
+
+.cartepopulaire div:nth-child(1) {
+    width: 45%;
+}
+
+.photospopulaires {
+    height: 100%;
+    width: 90%;
+}
+
+.cartepopulaire img {
+    border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
+}
+
+.infopopulaire {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.cartepopulaire h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size: 13px;
+    margin: 5px 0px 0px 0px;
+}
+
+.cartepopulaire p {
+    font-family: 'Raleway', sans-serif;
+    font-weight:200;
+    font-size: 10px;
+}
+
+.populaires a {
+    width: 256px;
+    height: 117px;
+    margin-left: 35px;
+}
+
+#titreactivités {
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.activités {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.activités img {
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.activités h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.flexboxactivités {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    width: 91%;
+}
+
+.vieuxport {
+    height: 400px;
+    width: 23%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 2px 5px #F2F2F2;
+}
+
+.photoport {
+    height: 88%;
+    width: 100%;
+}
+
+
+.fortetiles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 23%;
+}
+
+.fortdepomègues {
+    height: 50%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 2px 5px #F2F2F2;
+}
+
+.photofort {
+    width: 100%;
+    height: 75%;
+}
+
+.photofort img {
+    object-position: 0px -95px;
+}
+
+.îlesdufrioul {
+    height: 40%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 2px 5px #F2F2F2;
+}
+
+.photoîles {
+    width: 100%;
+    height: 70%;
+}
+
+.photoîles img {
+    object-position: 0px 0px;
+}
+
+.calanques {
+    height: 400px;
+    width: 23%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 2px 5px #F2F2F2;
+}
+
+.photocalanques {
+    height: 88%;
+    width: 100%;
+}
+
+.notredamelongchamp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 23%;
+}
+
+.notredame {
+    height: 45%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 2px 5px #F2F2F2;
+}
+
+.photonotredame {
+    width: 100%;
+    height: 75%;
+}
+
+.photonotredame img {
+    object-position: 0px 0px;
+}
+
+.longchamp {
+    height: 45%;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 2px 5px #F2F2F2;
+}
+
+.photolongchamp {
+    width: 100%;
+    height: 73%;
+}
+
+.photolongchamp img {
+    object-position: 0px -10px;
+}
+
+.footer {
+    display: flex;
+    background-color: #f2f2f2;
+    height: 150px;
+    margin-top: 60px;
+}
+
+.footer h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.footer p {
+    font-family: 'Raleway', sans-serif;
+    font-weight:200;
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.apropos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 55px;
+}
+
+.noshebergements {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 210px;
+}
+
+.assistance {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 210px;
+}
+
+@media screen and (max-width:992px) {
+
+    .booki img {
+        width: 110px;
+    }
+
+    .barrebleuhebergements a {
+        font-size: 16px;
+    }
+
+    .barrebleuactivites a {
+        font-size: 16px;
+    }
+
+    .title {
+        width: 91%;
+        text-align: center;
+    }
+
+    .title h1 {
+        font-size: 24px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .citysearch {
+        width: 40%;
+        margin-left: 26%;
+    }
+
+    .location {
+        width: 50px;
+        height: 50px;
+    }
+
+    .location i {
+        font-size: 20px;
+    }
+
+    .citysearch input {
+        width: 200px;
+        height: 44px;
+        border: solid 2px #F2F2F2;
+        border-left: none;
+        border-right: none;
+    }
+
+    .citysearch button {
+        width: 110px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .filter {
+        width: 91%;
+        justify-content: space-between;
+    }
+
+    .filter p {
+        font-size: 16px;
+    }
+
+    .info {
+        width: 55%;
+        font-size: 17px;
+    }
+
+    .allhebergements {
+        flex-direction: column-reverse;
+        height: 900px;
+    }
+
+    .populaires {
+        width: 91%;
+        height: 270px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        margin-left: 0;
+    }
+
+    .titlestarpopulaire {
+        height: 50px;
+        width: 91%;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+
+    .titlestarpopulaire h1 {
+        margin-left: 0px;
+    }
+
+    .photospopulaires {
+        width: 204px;
+        height: 93px;
+    }
+
+    .populaires a {
+        width: 214px;
+        height: 165px;
+        margin-left: 0;
+    }
+
+    .cartepopulaire {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cartepopulaire img {
+        border-radius: 20px 20px 0px 0px;
+        height: 93px;
+        width: 222%;
+    }
+
+    .infopopulaire {
+        height: 50px;
+    }
+
+    .infopopulaire p {
+        margin-bottom: 0px;
+    }
+
+    
+
+    .hebergements { 
+        width: 91%;
+    }
+
+    .flexboxactivités {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .flexboxactivités:nth-child(2) {
+        width: 50%
+    }
+
+    .vieuxport {
+        height: 190px;
+    }
+
+    .fortetiles {
+        flex-direction: row;
+        height: 190px;
+    }
+
+    .fortdepomègues {
+        height: 190px;
+    }
+
+    .îlesdufrioul {
+        height: 190px;
+    }
+
+    .calanques {
+        height: 190px;
+    }
+
+    .notredamelongchamp {
+        height: 190px;
+        flex-direction: row;
+    }
+
+    .notredame {
+        height: 190px;
+    }
+
+    .longchamp {
+        height: 190px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+.recherche i.fa-solid {
+    display: block;
+}
+
+.recherche span {
+    display: none;
+}
+
+.filter {
+    flex-wrap: wrap;
+}
+
+
+
+}

@@ -654,7 +654,7 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
         justify-content: flex-start;
         margin-left: 0%;
         width: 95%;
-        height: 260px;
+        height: 280px;
     }
 
     .titlestarpopulaire {
@@ -666,17 +666,23 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
     }
 
     .fas.fa-star.hostingMainCardGradeIcon.noire {
-        margin-left: 50%;
+        margin-left: 70%;
     }
 
     .cartepopulaire {
-        flex-direction: column;
         width: 30%;
+        height: 185px;
         margin-left: 0;
     }
 
+    .cartepopulaire a {
+        flex-direction: column;
+    }
+
     .cartepopulaire img {
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 20px 20px 0px 0px;
+        width: 250%;
+        height: 93px;
     }
 
     .starspopulaire {
@@ -686,6 +692,7 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
     .ensemblecartespopulaires {
         flex-direction: row;
         height: 80%;
+        margin-top: 20px;
     }
 
     .hebergements {
@@ -694,6 +701,11 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 
     .activités {
         flex-direction: column;
+        height: 435px;
+    }
+
+    .activités img {
+        height: 150px;
     }
 
     .flexboxgauche {
@@ -707,12 +719,15 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
         height: 100%;
     }
 
+    .photoport {
+        height: 150px;
+    }
+
     .fortetiles {
         flex-direction: row;
         justify-content: space-between;
         margin-right: 0;
         width: 65%;
-    
     }
 
     .fortdepomègues {
@@ -723,6 +738,10 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
     .îlesdufrioul {
         width: 47%;
         height: 50%;
+    }
+
+    .îlesdufrioul h2 {
+        margin-top: 10%;
     }
 
     
@@ -737,6 +756,10 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
         width: 31%;
         height: 100%;
         margin-left: 0;
+    }
+
+    .photocalanques {
+        height: 150px;
     }
 
     .notredamelongchamp {
@@ -757,9 +780,47 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
         height: 50%;
     }
 
+    .longchamp h2 {
+        margin-top: 6%;
+    }
+
 }
 
 @media screen and (max-width:768px) {
+
+.header {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.booki {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booki img {
+    width: 60%;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.barrebleuhebergements a, .barrebleuactivites a {
+    font-size: 22px;
+}
+
+.title {
+    margin-top: 100px;
+}
+
+.title h2 {
+
+}
 
 .recherche i.fa-solid {
     display: block;

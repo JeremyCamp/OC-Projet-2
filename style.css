@@ -1031,8 +1031,11 @@ nav {
 }
 
 .activités {
-    height: 1440px;
-    
+    height: 1440px;  
+}
+
+.activités h2 {
+    font-size: 14px;
 }
 
 .flexboxgauche {
@@ -1086,6 +1089,24 @@ nav {
 .longchamp {
     height: 210px;
     width: 100%;
+}
+
+.footer {
+    height: 100%;
+    flex-direction: column;
+}
+
+.apropos, .noshebergements, .assistance {
+    margin-left: 0px;
+    padding-left: 6%;
+}
+
+.apropos h2, .noshebergements h2, .assistance h2 {
+    font-size: 16px;
+}
+
+.apropos p, .noshebergements p, .assistance p {
+    font-size: 12px;
 }
 
 }

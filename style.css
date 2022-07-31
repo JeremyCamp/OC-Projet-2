@@ -124,8 +124,11 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
     font-family: 'Raleway', sans-serif;
     font-weight:600;
     font-size: 15px;
-    outline:  none;
-   
+    outline:  none;  
+}
+
+::placeholder {
+    color: #000;
 }
 
 #ville {
@@ -154,9 +157,7 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 }
 
 .filter {
-    width: 64%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     margin-left: 5%;
@@ -170,6 +171,7 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 }
 
 .filterbutton {
+    margin-left: 4%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -200,13 +202,15 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 }
 
 .bordericon {
+    position: relative;
+    right: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #DEEBFF;
     height: 40px;
     width: 40px;
-    border-radius: 50px;
+    border-radius: 50%;
     font-size: 120%;
     color: #0065FC;
 }
@@ -239,12 +243,12 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 
 .info span {
     color: #0065FC;
-    width: 2%;
+    width: 23px;
     height: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
+    border-radius: 50%;
     border: solid 2px #f2f2f2;
 }
 
@@ -359,21 +363,22 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
     font-family: 'Raleway', sans-serif;
     font-weight:600;
     font-size: 20px;
-    margin-left: 10%;
     white-space: nowrap;
 }
 
 .titlestarpopulaire {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 30px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
 }
 
 .fas.fa-star.hostingMainCardGradeIcon.noire {
     color: black;
     top: 0px;
     font-size: 120%;
-    margin: 0px 0px 0px 24%;
 }
 
 .ensemblecartespopulaires {
@@ -452,8 +457,8 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 }
 
 .activités img {
-    object-fit: cover;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 .activités h2 {
@@ -627,6 +632,10 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 
 @media screen and (max-width:992px) {
 
+    .filterbutton {
+        margin-bottom: 10px;
+    }
+
     .allhebergements {
         flex-direction: column-reverse;
     }
@@ -641,15 +650,8 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
     }
 
     .titlestarpopulaire {
-        width: 100%;
-    }
-
-    .titlestarpopulaire h1 {
         margin-left: 4%;
-    }
-
-    .fas.fa-star.hostingMainCardGradeIcon.noire {
-        margin-left: 70%;
+        margin-right: 4%;
     }
 
     .cartepopulaire {
@@ -794,10 +796,24 @@ nav {
     justify-content: space-between;
 }
 
-.barrebleuhebergements a, .barrebleuactivites a {
-    font-size: 20px;
-    margin-left: 5%;
+div .barrebleuhebergements , div .barrebleuactivites  {
+    border-bottom: solid 5px #F2F2F2;
 }
+
+div .barrebleuactivites:hover, div .barrebleuhebergements:hover {
+    border-top: 0px;
+    border-bottom: solid 5px #0065FC;
+}
+
+div .barrebleuactivites:focus, div .barrebleuhebergements:focus {
+    border-top: 0px;
+    border-bottom: solid 5px #0065FC;
+}
+
+.barrebleuactivites a, .barrebleuhebergements a {
+    font-size: 18px;
+}
+
 
 .allhebergements {
     margin-left: 0;
@@ -871,6 +887,7 @@ nav {
 .filterbutton {
     height: 50px;
     margin-bottom: 12px;
+    margin-left: 0;
 }
 
 .filterbutton p {
@@ -879,6 +896,7 @@ nav {
 
 .economique {
     width: 180px;
+    margin-right: 2%;
 }
 
 .familial {
@@ -963,6 +981,9 @@ nav {
     font-size: 20px;
 }
 
+.titlestarpopulaire {
+    width: 90%;
+}
 
 .flexboxhebergements {
     height: 1350px;
@@ -1058,6 +1079,10 @@ nav {
 .fortdepomègues {
     height: 210px;
     width: 100%;
+}
+
+.photofort img {
+    object-position: 0px -190px;
 }
 
 .îlesdufrioul {

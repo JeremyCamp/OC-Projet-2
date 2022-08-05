@@ -465,8 +465,13 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
     font-family: 'Raleway', sans-serif;
     font-weight:600;
     font-size: 14px;
-    margin-left: 6%;
-    margin-top: 15px;
+}
+
+.activitytitle {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 4%;
 }
 
 .flexboxgauche {
@@ -490,7 +495,7 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 }
 
 .photoport {
-    height: 88%;
+    height: 350px;
     width: 100%;
 }
 
@@ -505,14 +510,14 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 }
 
 .fortdepomègues {
-    height: 50%;
+    height: 220px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 2px 5px #F2F2F2;
 }
 
 .photofort {
     width: 100%;
-    height: 75%;
+    height: 170px;
 }
 
 .photofort img {
@@ -520,30 +525,31 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 }
 
 .îlesdufrioul {
-    height: 40%;
+    width: 100%;
+    height: 140px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 2px 5px #F2F2F2;
 }
 
 .photoîles {
     width: 100%;
-    height: 70%;
+    height: 90px;
 }
 
 .photoîles img {
     object-position: 50% 50%;
 }
 
-.calanques {
+.calanque {
     height: 400px;
-    width: 45%;
+    width: 46%;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 2px 5px #F2F2F2;
     margin-left: 3%;
 }
 
 .photocalanques {
-    height: 88%;
+    height: 350px;
     width: 100%;
 }
 
@@ -556,14 +562,14 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 }
 
 .notredame {
-    height: 45%;
+    height: 180px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 2px 5px #F2F2F2;
 }
 
 .photonotredame {
     width: 100%;
-    height: 75%;
+    height: 130px;
 }
 
 .photonotredame img {
@@ -571,14 +577,14 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 }
 
 .longchamp {
-    height: 45%;
+    height: 180px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0px 2px 5px #F2F2F2;
 }
 
 .photolongchamp {
     width: 100%;
-    height: 73%;
+    height: 130px;
 }
 
 .photolongchamp img {
@@ -701,7 +707,7 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 
     .vieuxport {
         width: 31%;
-        height: 100%;
+        height: 200px;
     }
 
     .photoport {
@@ -712,24 +718,27 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
         flex-direction: row;
         justify-content: space-between;
         margin-right: 0;
+        height: 435px;
         width: 65%;
     }
 
     .fortdepomègues {
         width: 47%;
-        height: 50%;
+        height: 200px;
+    }
+
+    .photofort {
+        height: 150px;
     }
 
     .îlesdufrioul {
         width: 47%;
-        height: 50%;
+        height: 200px;
     }
 
-    .îlesdufrioul h2 {
-        margin-top: 10%;
+    .photoîles{
+        height: 150px;
     }
-
-    
 
     .flexboxdroite {
         width: 99%;
@@ -737,10 +746,10 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
         justify-content: space-between;
     }
 
-    .calanques {
+    .calanque {
         width: 31%;
-        height: 100%;
-        margin-left: 0;
+        height: 200px;
+        margin-left: 0px;
     }
 
     .photocalanques {
@@ -751,22 +760,27 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
         flex-direction: row;
         justify-content: space-between;
         margin-right: 0;
+        height: 435px;
         width: 65%;
     
     }
 
     .notredame {
         width: 47%;
-        height: 50%;
+        height: 200px;
+    }
+
+    .photonotredame {
+        height: 150px;
     }
 
     .longchamp {
         width: 47%;
-        height: 50%;
+        height: 200px;
     }
 
-    .longchamp h2 {
-        margin-top: 6%;
+    .photolongchamp {
+        height: 150px;
     }
 
 }
@@ -1095,7 +1109,7 @@ div .barrebleuactivites:focus, div .barrebleuhebergements:focus {
     flex-direction: column;
 }
 
-.calanques {
+.calanque {
     height: 210px;
     width: 100%;
 }

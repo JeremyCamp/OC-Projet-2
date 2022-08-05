@@ -171,6 +171,7 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
 }
 
 .filterbutton {
+    height: 36px;
     margin-left: 32px;
     display: flex;
     align-items: center;
@@ -180,7 +181,6 @@ div .barrebleuhebergements:hover, div .barrebleuactivites:hover {
     border: solid 2px #f2f2f2;
     border-left: none;
     padding: 0px;
-    height: 40px;
 }
 
 .filterbutton p {
@@ -1080,7 +1080,7 @@ div .barrebleuactivites:focus, div .barrebleuhebergements:focus {
 }
 
 .vieuxport {
-    height: 210px;
+    height: 200px;
     width: 100%;
 }
 
@@ -1091,7 +1091,7 @@ div .barrebleuactivites:focus, div .barrebleuhebergements:focus {
 }
 
 .fortdepomègues {
-    height: 210px;
+    height: 200px;
     width: 100%;
 }
 
@@ -1100,7 +1100,7 @@ div .barrebleuactivites:focus, div .barrebleuhebergements:focus {
 }
 
 .îlesdufrioul {
-    height: 210px;
+    height: 200px;
     width: 100%;
 }
 
@@ -1110,7 +1110,7 @@ div .barrebleuactivites:focus, div .barrebleuhebergements:focus {
 }
 
 .calanque {
-    height: 210px;
+    height: 200px;
     width: 100%;
 }
 
@@ -1121,12 +1121,12 @@ div .barrebleuactivites:focus, div .barrebleuhebergements:focus {
 }
 
 .notredame {
-    height: 210px;
+    height: 200px;
     width: 100%;
 }
 
 .longchamp {
-    height: 210px;
+    height: 200px;
     width: 100%;
 }
 
